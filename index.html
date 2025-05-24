@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bdf49301e0.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+
+    <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" alt="Logo" style="height:40px;">
+         <i class="fa-solid fa-house"></i>
+    <a class="btn btn-outline-light" href="#" role="button">Open App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Log in</a>
+             </li>
+
+             <li class="nav-item">
+                 <a class="nav-link text-white" href="">Sign up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Premium</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Help</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Download</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Privacy</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Terms</a>
+            </li>
+        </ul> 
+        </div>                
+    </nav>
+
+    <div class="container">
+        <h3 class="heading">Trending songs</h3>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="image" src="https://www.tunesloaded.com.ng/wp-content/uploads/2025/05/Gaise-Baba-No-Turning-Back-Remix-Ft-Lawrence-Oyor.webp">
+                    <h6>No Turning Back II</h6>
+                    <h6>Gaise Baba,</h6>
+                    <h6>Lawrence Oyor</h6>
+                </div>
+
+                 <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdKQolcfYH4kENu_chsFX6JsShYxXMHLDKQ&s">
+                    <h6>Modafoka</h6>
+                    <h6>Naira Marley</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="image" src="data:image/jpeg;base64,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">
+                    <h6>Alhaji</h6>
+                    <h6>Tekno</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="image" src="https://i0.wp.com/www.tunesloaded.com.ng/wp-content/uploads/2025/04/FOLA-lost-ft-Kizz-Daniel.webp">
+                    <h6>lost</h6>
+                    <h6>FOLA,Kizz Daniel</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="image" src="https://www.loadedsongs.com.ng/wp-content/uploads/2025/05/Fido-Money-Moves.webp">
+                    <h6>Mobelum Ife</h6>
+                    <h6>Rord</h6>
+                </div>
+
+                 <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="image" src="https://www.oneclickghana.com/wp-content/uploads/2025/04/black-sherif-iron-boy-image.jpeg">
+                    <h6>IRON BOY</h6>
+                    <h6>Black Sherif</h6>
+                 </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="container">
+        <h3 class="heading">Popular artists</h3>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+        <img class="artists" src="https://notjustok.com/wp-content/uploads/2025/04/Davido-edited-1.jpg">
+        <h6>Davido</h6>
+        <h6>Artist</h6>
+         </div>
+            
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <img class="artists" src="https://www.marmaladecollective.com/content/images/size/w2000/2024/10/Shallipopi_BOOHOOMAN_28_9_2024_-Look-1_Shalli_0110-Victor.psdc_-scaled-1.jpg">
+                <h6>Shallipopi</h6>
+                <h6>Artist</h6>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <img class="artists" src="https://www.halmblog.com/wp-content/uploads/2023/04/Asake.jpg">
+                <h6>Asake</h6>
+                <h6>Artist</h6>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <img class="artists" src="https://iscale.iheart.com/catalog/artist/30866557">
+                <h6>Rema</h6>
+                <h6>Artist</h6>
+            </div>
+
+             <div class="col-lg-2 col-md-4 col-sm-6">
+                <img class="artists" src="https://www.dopexclusive.com.ng/wp-content/uploads/2025/02/Odumodublvck-%E2%80%93-Pity-This-Boy-Ft.-Victony.webp">
+                <h6>Odumodu</h6>
+                <h6>Artist</h6>
+             </div>
+
+             <div class="col-lg-2 col-md-4 col-sm-6">
+                <img class="artists" src="https://skinfama.com/wp-content/uploads/2023/09/Fireboy-songs-1-1-1024x1024.jpg">
+             </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <h6>Company</h6>
+            <a class="nav-link text-white" href="">About</a>
+            <a class="nav-link text-white" href="">Jobs</a>
+            <a class="nav-link text-white" href="">For The Record</a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <h6>Communities</h6>
+            <a class="nav-link text-white" href="">For Artists</a>
+            <a class="nav-link text-white" href="">Developers</a>
+            <a class="nav-link text-white" href="">Advertising</a>
+            <a class="nav-link text-white" href="">Investors</a>
+            <a class="nav-link text-white" href="">Vendors</a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <h6>Useful links</h6>
+            <a class="nav-link text-white" href="">Support</a>
+            <a class="nav-link text-white" href="">Free Mobile App</a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <h6>Spotify Plans</h6>
+             <a class="nav-link text-white" href="">Premium</a>
+              <a class="nav-link text-white" href="">Individual</a>
+               <a class="nav-link text-white" href="">Premium Duo</a>
+                <a class="nav-link text-white" href="">Premium Family</a>
+                 <a class="nav-link text-white" href="">Premium Student</a>
+                  <a class="nav-link text-white" href="">Spotify Free</a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+        <a class="nav-link text-white" href=""><i class="fa-brands fa-facebook"></i></a>
+        <a class="nav-link text-white" href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="container">
+    <p><i class="fa-brands fa-creative-commons"></i>2025 Spotify AB</p>
+    </div>
+
+
+
+</body>

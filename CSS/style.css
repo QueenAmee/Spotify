@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+
+h6{
+    color:bisque;
+    padding: auto;
+}
+
+hr{
+    border-color: white;
+    line-height: 2;
+}
+
+p{
+    color: white;
+}
+
+.heading{
+    color: white;
+    padding: 5px;
+
+}
+
+.image{
+    width: 70%;
+    border-radius: 10%;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1rem;
+}
+
+.fa-solid{
+    padding: 0 18px
+}
+
+.artists{
+    border-radius: 50%;
+    width: 100%;
+}

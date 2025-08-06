@@ -22,6 +22,12 @@ p{
 
 }
 
+.artists{
+    border-radius: 50%;
+    width: 100%;
+    
+}
+
 .image{
     width: 70%;
     border-radius: 10%;
@@ -40,6 +46,5 @@ p{
 }
 
 .artists{
-    border-radius: 50%;
-    width: 100%;
+    background-color: black;
 }
